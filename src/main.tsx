@@ -6,6 +6,7 @@ import "./index.css";
 // Import Firebase SDKs
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getPerformance } from "firebase/performance";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCB7dKZYtYrwA7SI6-BCVo44T4Y0oXjqn4",
@@ -19,6 +20,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 getAnalytics(app);
+getPerformance(app);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
