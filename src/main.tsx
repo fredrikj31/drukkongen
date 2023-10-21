@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import Firebase SDKs
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
+import { DicesPage } from "./pages/dices.tsx";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCB7dKZYtYrwA7SI6-BCVo44T4Y0oXjqn4",
@@ -22,8 +24,19 @@ const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 getPerformance(app);
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/dices",
+    element: <DicesPage />,
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
