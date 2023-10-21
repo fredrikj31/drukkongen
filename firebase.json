@@ -5,5 +5,19 @@
   "storageBucket": "drukkongen.appspot.com",
   "messagingSenderId": "504945923966",
   "appId": "1:504945923966:web:20901da31a526f314cc52f",
-  "measurementId": "G-S4QL8KDPLM"
+  "measurementId": "G-S4QL8KDPLM",
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
