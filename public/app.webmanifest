@@ -5,7 +5,7 @@
   "display": "standalone",
   "id": "app:drukkongen",
   "background_color": "#ffffff",
-  "theme_color": "#ff0000",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "assets/icons/maskable_icon.png",
