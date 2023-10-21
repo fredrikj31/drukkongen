@@ -1,11 +1,11 @@
 {
   "name": "Druk Kongen",
-  "short_name": "drukkongen",
+  "short_name": "Druk Kongen",
   "start_url": "/",
   "display": "standalone",
   "id": "app:drukkongen",
   "background_color": "#ffffff",
-  "theme_color": "#ff0000",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "assets/icons/maskable_icon.png",
