@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import rightArrow from "../assets/images/arrow.svg";
+import rightArrow from "../../assets/images/arrow.svg";
 
 interface HeaderProps {
   text: string;
