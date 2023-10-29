@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import DiceIcon from "./assets/images/dice.svg";
+import CoinFlipIcon from "./assets/images/coinflip.svg";
 
 const App = () => {
   return (
@@ -13,6 +14,12 @@ const App = () => {
             <div className="bg-red-500 rounded w-32 h-32 flex flex-col justify-center items-center">
               <img src={DiceIcon} height={75} width={75} />
               <span className="text-xl text-white">Terninger</span>
+            </div>
+          </Link>
+          <Link to={"/coinflip"} className="inline-block">
+            <div className="bg-red-500 rounded w-32 h-32 flex flex-col justify-center items-center">
+              <img src={CoinFlipIcon} height={75} width={75} />
+              <span className="text-xl text-white">Coin Flip</span>
             </div>
           </Link>
         </div>
