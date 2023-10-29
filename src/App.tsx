@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Tab } from "./components/Tab";
 import DiceIcon from "./assets/images/dice.svg";
 import CoinFlipIcon from "./assets/images/coinflip.svg";
+import WheelIcon from "./assets/images/wheel.svg";
 
 const App = () => {
   return (
@@ -10,18 +11,11 @@ const App = () => {
       </div>
       <div className="flex flex-col gap-10">
         <div className="flex flex-row justify-center gap-10">
-          <Link to={"/dices"} className="inline-block">
-            <div className="bg-red-500 rounded w-32 h-32 flex flex-col justify-center items-center">
-              <img src={DiceIcon} height={75} width={75} />
-              <span className="text-xl text-white">Terninger</span>
-            </div>
-          </Link>
-          <Link to={"/coinflip"} className="inline-block">
-            <div className="bg-red-500 rounded w-32 h-32 flex flex-col justify-center items-center">
-              <img src={CoinFlipIcon} height={75} width={75} />
-              <span className="text-xl text-white">Coin Flip</span>
-            </div>
-          </Link>
+          <Tab icon={DiceIcon} text="Terninger" url="/dices" />
+          <Tab icon={CoinFlipIcon} text="Coin Flip" url="/coinflip" />
+        </div>
+        <div className="flex flex-row justify-center gap-10">
+          <Tab icon={WheelIcon} text="Eget Hjul" url="/wheel" />
         </div>
       </div>
     </>
