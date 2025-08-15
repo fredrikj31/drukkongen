@@ -1,0 +1,19 @@
+{
+  "name": "drukkongen",
+  "author": "fredrikj31",
+  "description": "A web application which allows people to create their own maps with pins.",
+  "repository": {
+    "url": "https://github.com/fredrikj31/drukkongen"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "app:dev": "pnpm --filter @drukkongen/app run dev",
+    "app:build": "pnpm --filter @drukkongen/app run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check app",
+    "format:write": "prettier --write app"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
