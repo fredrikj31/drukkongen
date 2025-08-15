@@ -1,18 +1,7 @@
 {
-  "apiKey": "AIzaSyCB7dKZYtYrwA7SI6-BCVo44T4Y0oXjqn4",
-  "authDomain": "drukkongen.firebaseapp.com",
-  "projectId": "drukkongen",
-  "storageBucket": "drukkongen.appspot.com",
-  "messagingSenderId": "504945923966",
-  "appId": "1:504945923966:web:20901da31a526f314cc52f",
-  "measurementId": "G-S4QL8KDPLM",
   "hosting": {
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "public": "app/build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",

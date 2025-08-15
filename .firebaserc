@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "drukkongen"
+    "production": "pin-scout",
+    "development": "pin-scout-dev"
   }
 }
