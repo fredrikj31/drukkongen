@@ -1,35 +1,19 @@
 {
   "name": "drukkongen",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "test": "echo testing...",
-    "check:types": "tsc --project tsconfig.json --noEmit",
-    "preview": "vite preview"
+  "author": "fredrikj31",
+  "description": "A web application which allows people to create their own maps with pins.",
+  "repository": {
+    "url": "https://github.com/fredrikj31/drukkongen"
   },
-  "dependencies": {
-    "firebase": "^10.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0"
+  "license": "Apache-2.0",
+  "scripts": {
+    "app:dev": "pnpm --filter @drukkongen/app run dev",
+    "app:build": "pnpm --filter @drukkongen/app run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check app",
+    "format:write": "prettier --write app"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.0.3",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.5.3"
+    "prettier": "^3.6.2"
   }
 }

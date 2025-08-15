@@ -1,4 +1,4 @@
-name: Deploy web app to development
+name: Deploy development
 
 on:
   push:
@@ -6,35 +6,9 @@ on:
       - main
 
 jobs:
-  deploy_development:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Lint
-        run: pnpm run lint
-
-      - name: Run tests
-        run: pnpm run test
-
-      - name: Build Typescript
-        run: pnpm run build
-
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: drukkongen
-          channelId: dev
+  deployment:
+    concurrency: "development deployment"
+    uses: ./.github/workflows/deployment.yaml
+    with:
+      environment: development
+    secrets: inherit
