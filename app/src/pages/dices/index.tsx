@@ -1,11 +1,11 @@
 import { Header } from "../../components/Header";
-import { Dice } from "./components/Dice";
+import { DiceComponent } from "./components/Dice";
 
 export const DicesPage = () => {
   return (
     <>
       <Header text="Terninger" />
-      <Dice />
+      <DiceComponent />
     </>
   );
 };
