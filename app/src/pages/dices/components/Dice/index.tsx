@@ -14,13 +14,18 @@ export const DiceComponent = () => {
 
   const handleRollEnd = (rollResult: number) => {
     setIsRolling(false);
-    setResult(rollResult);
+    setResult((prev) => (prev ? (prev += rollResult) : rollResult));
   };
 
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-4 mt-4">
-        <Dice isRolling={isRolling} onRollEnd={handleRollEnd} />
+        <div className="grid grid-cols-2 gap-8">
+          <Dice isRolling={isRolling} onRollEnd={handleRollEnd} />
+          <Dice isRolling={isRolling} onRollEnd={handleRollEnd} />
+          <Dice isRolling={isRolling} onRollEnd={handleRollEnd} />
+          <Dice isRolling={isRolling} onRollEnd={handleRollEnd} />
+        </div>
         <button
           onClick={handleRoll}
           disabled={isRolling}
