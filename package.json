@@ -11,9 +11,11 @@
     "app:build": "pnpm --filter @drukkongen/app run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format:check": "prettier --check app",
-    "format:write": "prettier --write app"
+    "format:write": "prettier --write app",
+    "firebase:emulators:start": "firebase emulators:start"
   },
   "devDependencies": {
+    "firebase-tools": "^14.20.0",
     "prettier": "^3.6.2"
   }
 }
