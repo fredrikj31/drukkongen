@@ -10,6 +10,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
 import { DicesPage } from "./pages/dices/index.tsx";
 import { CoinFlipPage } from "./pages/coinflip/index.tsx";
+import { WheelOfFortunePage } from "./pages/wheel-of-fortune/index.tsx";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCB7dKZYtYrwA7SI6-BCVo44T4Y0oXjqn4",
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/coinflip",
     element: <CoinFlipPage />,
+  },
+  {
+    path: "/wheel",
+    element: <WheelOfFortunePage />,
   },
 ]);
 
