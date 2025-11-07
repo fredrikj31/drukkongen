@@ -23,6 +23,14 @@ const App = () => {
             </div>
           </Link>
         </div>
+        <div className="flex flex-row justify-center gap-10">
+          <Link to={"/wheel"} className="inline-block">
+            <div className="bg-red-500 rounded w-32 h-32 flex flex-col justify-center items-center">
+              <img src={CoinFlipIcon} height={75} width={75} />
+              <span className="text-xl text-white">Wheel</span>
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );
