@@ -2456,8 +2456,9 @@ packages:
     resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
     engines: {node: '>=10'}
 
-  install-artifact-from-github@1.4.0:
-    resolution: {integrity: sha512-+y6WywKZREw5rq7U2jvr2nmZpT7cbWbQQ0N/qfcseYnzHFz2cZz1Et52oY+XttYuYeTkI8Y+R2JNWj68MpQFSg==}
+  install-artifact-from-github@1.8.1:
+    resolution: {integrity: sha512-lV8dRlR/3i6Tk4X9agaqhMRY6ScVU3YOuKse0VRnP9+rUWfImeCjo1TeAefXEauNVF3a8QgOb6jW3CZJetVopw==}
+    engines: {node: '>=18'}
     hasBin: true
 
   ip-address@10.7.2:
@@ -6844,7 +6845,7 @@ snapshots:
 
   ini@2.0.0: {}
 
-  install-artifact-from-github@1.4.0:
+  install-artifact-from-github@1.8.1:
     optional: true
 
   ip-address@10.7.2: {}
@@ -7746,7 +7747,7 @@ snapshots:
 
   re2@1.22.1(supports-color@7.2.0):
     dependencies:
-      install-artifact-from-github: 1.4.0
+      install-artifact-from-github: 1.8.1
       nan: 2.23.0
       node-gyp: 11.5.0(supports-color@7.2.0)
     transitivePeerDependencies:
